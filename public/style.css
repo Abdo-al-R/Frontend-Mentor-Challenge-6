@@ -15,8 +15,8 @@
 body {
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   font-family: var(--Lexend-Deca);
   background-color: var(--background-headings-buttons);
 }
@@ -24,38 +24,39 @@ main {
   width: 800px;
   height: 430px;
   display: flex;
-  margin: 0 20px;
+  margin: 0 1.25rem;
 
 }
 .container {
   width: 100%;
 }
 .card{
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
 }
 .car {
   width: 73%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin-left: 12%;
+  margin-left: 1.875rem;
 }
 img {
   width: fit-content;
-  margin: 30px 0;
+  margin: 1.875rem 0;
 }
-h1 {
+h2 {
   font-family: var(--Big-Shoulders);
   color: var(--background-headings-buttons);
   text-transform: uppercase;
-  margin-bottom: 20px;
+  font-size: 1.875rem;
+  margin-bottom: 1.25rem;
 }
 p {
   color: var(--paragraphs);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5rem;
 }
-button {
+a {
   background-color: var(--background-headings-buttons);
   border: none;
   width: 70%;
@@ -64,9 +65,13 @@ button {
   font-family: var(--Lexend-Deca);
   cursor: pointer;
   transition: 0.2s ease;
-  margin-top: 40%;
+  margin-top: 4.5rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-button:hover {
+a:hover {
   background-color: unset;
   color: white !important;
   border: solid 2px white;
@@ -76,31 +81,33 @@ button:hover {
   background-color: var(--Bright-orang);
   border-radius: 5px 0 0 5px;
 }
-.Sedan button {
+.Sedan a {
   color: var(--Bright-orang);
 }
 .card-2 {
   background-color: var(--Dark-cyan);
 }
-.SUV button {
+.SUV a {
   color: var(--Dark-cyan);
 }
 .card-3 {
   background-color: var(--Very-dark-cyan);
   border-radius: 0 5px 5px 0;
 }
-.Luxury button {
+.Luxury a {
   color: var(--Very-dark-cyan);
 }
 
 @media (max-width:375px){
+    body{
+    }
     main{
         width: 320px !important;
         flex-direction: column;
-        margin: 0 20px;
+        margin: 0 1.25rem;
     }
     .card{
-        padding-bottom: 30px;
+        padding-bottom: 1.875rem;
     }
     .card-1{
         border-radius: 5px 5px 0 0 ;
@@ -111,13 +118,16 @@ button:hover {
 
 }
 @media (max-width:678px){
-    main{
+   body{
+      align-items: baseline;
+   }
+  main{
         width: 375px;
         flex-direction: column;
-        margin: 0 20px;
+        margin: 0 1.25rem;
     }
     .card{
-        padding-bottom: 30px;
+        padding-bottom: 1.875rem;
     }
     .card-1{
         border-radius: 5px 5px 0 0 ;
