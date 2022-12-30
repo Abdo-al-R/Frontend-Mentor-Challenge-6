@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Bright-orang: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --paragraphs: hsla(0, 0%, 100%, 0.75);
+  --background-headings-buttons: hsl(0, 0%, 95%);
+  --Lexend-Deca: "Lexend Deca", sans-serif;
+  --Big-Shoulders: "Big Shoulders Display", cursive;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--Lexend-Deca);
+  background-color: var(--background-headings-buttons);
+}
+main {
+  width: 800px;
+  height: 430px;
+  display: flex;
+  margin: 0 20px;
+
+}
+.container {
+  width: 100%;
+}
+.card{
+    padding-bottom: 30px;
+}
+.car {
+  width: 73%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 12%;
+}
+img {
+  width: fit-content;
+  margin: 30px 0;
+}
+h1 {
+  font-family: var(--Big-Shoulders);
+  color: var(--background-headings-buttons);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+p {
+  color: var(--paragraphs);
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+button {
+  background-color: var(--background-headings-buttons);
+  border: none;
+  width: 70%;
+  height: 40px;
+  border-radius: 1.563rem;
+  font-family: var(--Lexend-Deca);
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-top: 40%;
+}
+button:hover {
+  background-color: unset;
+  color: white !important;
+  border: solid 2px white;
+}
+
+.card-1 {
+  background-color: var(--Bright-orang);
+  border-radius: 5px 0 0 5px;
+}
+.Sedan button {
+  color: var(--Bright-orang);
+}
+.card-2 {
+  background-color: var(--Dark-cyan);
+}
+.SUV button {
+  color: var(--Dark-cyan);
+}
+.card-3 {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0 5px 5px 0;
+}
+.Luxury button {
+  color: var(--Very-dark-cyan);
+}
+
+@media (max-width:375px){
+    main{
+        width: 320px !important;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .card{
+        padding-bottom: 30px;
+    }
+    .card-1{
+        border-radius: 5px 5px 0 0 ;
+    }
+    .card-3{
+        border-radius:  0 0 5px 5px;
+    }
+
+}
+@media (max-width:678px){
+    main{
+        width: 375px;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .card{
+        padding-bottom: 30px;
+    }
+    .card-1{
+        border-radius: 5px 5px 0 0 ;
+    }
+    .card-3{
+        border-radius:  0 0 5px 5px;
+    }
+}
